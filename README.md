@@ -13,6 +13,7 @@ It is an xtension of APIView to support middlewares in rest-framework. Use this 
 
 
 ## Writing a middleware
+Below is an example middleware that logs user activity with user email.
 ```python
 from drf_middleware import DRFMiddleware
 
