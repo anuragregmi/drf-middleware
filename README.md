@@ -47,6 +47,6 @@ views.APIView = MiddlewareEnabledAPIView
 Then list your middleware in `DRF_MIDDLEWARE_CLASSES` in `settings.py`
 
 ```python
-DRF_MIDDLEWARE_CLASSES = ["src.UserActivityMiddleware"]
+DRF_MIDDLEWARE_CLASSES = ["myapp.middlewares.UserActivityMiddleware"]
 ```
 
