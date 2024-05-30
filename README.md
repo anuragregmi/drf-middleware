@@ -35,7 +35,7 @@ class UserActivityMiddleware(DRFMiddleware):
 
 ## Django setting
 
-First you need to monkey patch DRF's API view in `settings.py`
+First you need to monkey patch DRF's API view in `settings.py`. Add the following lines at the end of `settings.py`.
 
 ```python
 from rest_framework import views
