@@ -93,8 +93,8 @@ class MiddlewareEnabledAPIView(APIView):
         self.__middlewares: list[DRFMiddleware] | None = None
 
     def initial(self, request, *args, **kwargs):
-        super().initial(request, *args, **kwargs)
         self.initialize_middlewares()
+        super().initial(request, *args, **kwargs)
         self.middleware_process_request(request)
 
     def finalize_response(self, request, response, *args, **kwargs):
